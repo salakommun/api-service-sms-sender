@@ -4,6 +4,7 @@ _The service provides functionality to send SMS via external SMS gateways. Suppo
 
 * Telia
 * LinkMobility
+* Infobip
 
 _Please note that agreements with suppliers for each SMS gateway must be signed separately._
 
@@ -60,6 +61,9 @@ This microservice does not depend on any other internal services. However, it do
 - **LinkMobility**
   - **Purpose:** Used to send SMS via LinkMobility's gateway. An external agreement is required.
   - **Repository:** Service is provided by third party (LinkMobility)
+- **Infobip**
+  - **Purpose:** Used to send SMS via Infobip's gateway. An external agreement is required.
+  - **Repository:** Service is provided by third party (Infobip)
 
 ## API Documentation
 
@@ -126,6 +130,12 @@ provider:
     basicauth:
       username: <username>
       password: <password>
+  infobip:
+    base-url: <base-url>
+    enabled: <boolean>
+    priority: <integer>
+    flash-capable: <boolean>
+    api-key: <api-key>
 
 ```
 
