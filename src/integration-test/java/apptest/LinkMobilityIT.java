@@ -12,7 +12,8 @@ import se.sundsvall.smssender.Application;
 @WireMockAppTestSuite(files = "classpath:/LinkMobilityIT/", classes = Application.class)
 @TestPropertySource(properties = {
 	"provider.telia.enabled=false",
-	"provider.linkmobility.enabled=true"
+	"provider.linkmobility.enabled=true",
+	"provider.infobip.enabled=false"
 })
 class LinkMobilityIT extends AbstractAppTest {
 

@@ -13,6 +13,7 @@ import se.sundsvall.smssender.Application;
 @TestPropertySource(properties = {
 	"provider.telia.enabled=true",
 	"provider.linkmobility.enabled=false",
+	"provider.infobip.enabled=false",
 })
 class TeliaIT extends AbstractAppTest {
 

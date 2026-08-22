@@ -26,6 +26,13 @@ provider:
     basicauth:
       username: someUser
       password: somePassword
+  # Infobip
+  infobip:
+    base-url: http://localhost:${wiremock.server.port}/infobip
+    enabled: true
+    priority: 3
+    flash-capable: true
+    api-key: someApiKey
 scheduler:
   linkmobility:
     health:

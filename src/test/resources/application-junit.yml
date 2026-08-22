@@ -24,6 +24,15 @@ provider:
     basicAuth:
       username: someUsername
       password: somePassword
+  
+  # Infobip SMS integration
+  infobip:
+    base-url: http://localhost
+    enabled: true
+    priority: 3
+    flash-capable: false
+    api-key: someApiKey
+  
 scheduler:
   linkmobility:
     health:
